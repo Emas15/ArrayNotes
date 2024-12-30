@@ -17,14 +17,15 @@ public class SelectionSort {
         for(int i = 0; i < size-1; i++){
             int smallestNumAt = i;
             for(int j = (i+1); j<size; j++){
-                if(arr[j] < arr[i]){
+                if(arr[j] < arr[smallestNumAt]){
                     smallestNumAt = j;
                 }
+            }
                 int temp = arr[i];
                 arr[i] = arr[smallestNumAt];
                 arr[smallestNumAt] = temp;
             }
-        }
+        
 
         for(int i =0; i<arr.length; i++){
             System.out.print(arr[i]+" ");
