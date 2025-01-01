@@ -15,7 +15,7 @@ public class Task7 {
 
         for(int i =0; i < arr.length; i++){
             boolean matched  = false;
-            for(int j = 0; j<newC; j++){
+            for(int j = 0; j<i; j++){
                 if(arr[j] == arr[i]){
                     matched=true;
                     break;

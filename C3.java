@@ -12,6 +12,7 @@ public class C3 {
                 if ((my_array[i] == my_array[j]) ) {
 
                     System.out.println("Duplicate Element : " + my_array[j]);
+                    break;
                 }
             }
         }
